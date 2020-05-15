@@ -6,7 +6,7 @@ class sprite{
         this.y = yPos;
         this.type = type;
         //Setting diameter if the type of object is circle
-        if(this.type === "circle"){
+        if(this.type === "rectangle"){
             this.diameter = 50;
             this.width = 0;
             this.height = 0;
