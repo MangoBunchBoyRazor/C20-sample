@@ -75,3 +75,17 @@ function isTouching(spriteA, spriteB) {
         return false;
     }
 }
+//Function to bounce off the first object with the second object
+function bounceOff(a,b){
+    //Calling function is touching to detect collision
+    if(isTouching(a,b)){
+        if(a.y <= b.y || a.y >= (b.y + b.height)){
+            a.velocityY *= -1;
+            return true;
+        }
+        else{
+            a.velocityX *= -1;
+            return false;
+        }
+    }
+}
