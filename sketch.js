@@ -75,4 +75,8 @@ function draw(){
 
     //Setting the object position to the mouse
     //object2.setSpritePosition(mouseX,mouseY);  
+    
+    if(bounceOff(object2,object1)){
+        object2.shapeColor = "red";
+    }
 }
